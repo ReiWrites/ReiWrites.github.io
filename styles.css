@@ -1,0 +1,142 @@
+body {
+    background-color: #333;
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+/* Top navbar contents */
+
+.home {
+    transition: box-shadow 1s;
+    margin: 5px 10px 10px 5px;
+}
+
+.home-link:hover {
+    box-shadow: 0px 0px 5px rgb(204, 0, 255);
+}
+
+.home-link {
+    text-decoration: none;
+    color: #fff;
+    vertical-align: center;
+    font-size: 36px;
+    font-family: "Yellowtail", cursive;
+    padding-right: 5px;
+}
+
+.navbar {
+    overflow: hidden;
+    background-color: #555;
+}
+
+.navbar>a {
+    text-decoration: none;
+}
+
+.navbar a:not(.home-link) {
+    float: left;
+    background-color: #3d3d3d;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    border: 3px solid #555;
+}
+
+.navbar a:hover:not(.home-link), .subnav:hover .subnavbtn {
+  background-color: #777;
+  color: white;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  color: #000;
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  border: none;
+  outline: none;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  background-color: #CCC;
+  left: 0;
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+  margin-top: 50px;
+  border: 3px solid #555;
+}
+
+.subnav-content a {
+  float: left;
+  color: #000;
+  border: 3px solid #CCC;
+}
+
+.subnav-content a:hover {
+  background-color: #CCC;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+
+/* Content itself */
+
+.content {
+  padding: 1px 16px;
+  height: 1000px;
+}
+
+
+.boxes {
+    border-radius: 15px;
+    padding: 20px;
+    border: 2px solid #808080;
+    box-shadow: 2px 2px 5px rgb(204, 0, 255);
+    cursor: pointer;
+}
+
+.boxes>h3 {
+    margin: 0px;
+}
+
+.boxes>h5 {
+    margin-top: 10px;
+    color: #ccc;
+}
+
+/* Button that jumps to the top */
+
+#totopbtn {
+  display: none;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  border-radius: 25px;
+  background-color: #CCC;
+  color: #000;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 0;
+  z-index: 2;
+}
+
+#totopbtn:hover {
+    background-color: #555;
+    color: white;
+}
